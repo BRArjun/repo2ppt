@@ -1,0 +1,59 @@
+# HackDeck Configuration
+
+codebase_digest:
+  max_depth: 10
+  output_format: "markdown"
+  show_size: false
+  ignore_patterns:
+    - "*.pyc"
+    - "*.pyo"
+    - "*.pyd"
+    - "__pycache__"
+    - "node_modules"
+    - "bower_components"
+    - ".git"
+    - ".svn"
+    - ".hg"
+    - ".gitignore"
+    - "venv"
+    - ".venv"
+    - "env"
+    - ".env"
+    - "*.env"
+    - ".idea"
+    - ".vscode"
+    - "*.log"
+    - "*.bak"
+    - "*.swp"
+    - "*.tmp"
+    - ".DS_Store"
+    - "Thumbs.db"
+    - "build"
+    - "dist"
+    - ".egg-info"
+    - "*.so"
+    - "*.dylib"
+    - "*.dll"
+    - "package-lock.json"
+    - "yarn.lock"
+    - "poetry.lock"
+    - "*.config.js"
+    - "*.config.ts"
+
+gemini:
+  model: "gemini-2.5-pro"
+  temperature: 0.7
+  max_tokens: 4000
+
+presenton:
+  tone: "professional"
+  verbosity: "concise"
+  template: "general"
+  include_title_slide: true
+  include_table_of_contents: false
+  export_format: "pptx"
+
+application:
+  max_repo_size_mb: 500
+  default_slide_count: 8
+  cleanup_after_generation: true

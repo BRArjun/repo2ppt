@@ -1,0 +1,478 @@
+2026-01-02 09:52:22 | ERROR    | app.services.digest_service:generate_digest - Digest generation failed: 
+2026-01-02 09:52:22 | ERROR    | app.services.digest_service:generate_digest - Error generating digest: Failed to generate digest: 
+2026-01-02 09:52:22 | ERROR    | app.main:generate_presentation - Error generating presentation: Failed to generate digest: 
+2026-01-02 09:53:53 | ERROR    | app.services.digest_service:generate_digest - Digest generation failed with return code: 1
+2026-01-02 09:53:53 | ERROR    | app.services.digest_service:generate_digest - STDOUT: Debug: Final ignore patterns: {'*.bak', 'Thumbs.db', '*.dll', 'package-lock.json', '.egg-info', '*.config.js', '*.log', '.hg', '.idea', '__pycache__', '.venv', 'build', '.svn', '*.pyd', 'dist', 'venv', '*.so', '.gitignore', 'node_modules', 'env', '*.pyo', '.vscode', '*.env', '*.dylib', '*.swp', 'poetry.lock', '.DS_Store', '.git', '*.config.ts', 'yarn.lock', '*.tmp', 'bower_components', '.env', '*.egg-info', '*.pyc'}
+Debug: Ignore patterns after load_ignore_patterns: {'*.bak', 'Thumbs.db', '*.dll', 'package-lock.json', '.egg-info', '*.config.js', '*.log', '.hg', '.idea', '__pycache__', '.venv', 'build', '.svn', '*.pyd', 'dist', 'venv', '*.so', '.gitignore', 'node_modules', 'env', '*.pyo', '.vscode', '*.env', '*.dylib', '*.swp', 'poetry.lock', '.DS_Store', '.git', '*.config.ts', 'yarn.lock', '*.tmp', 'bower_components', '.env', '*.egg-info', '*.pyc'}
++-----------------+
+| Codebase Digest |
++-----------------+
+Analyzing directory: temp_repos/admincodes7_zor
+Debug: Ignoring temp_repos/admincodes7_zor/.git due to pattern .git
+Debug: Ignoring temp_repos/admincodes7_zor/.gitignore due to pattern .gitignore
+Estimated output size: 132.98 KB
+Debug: Checking temp_repos/admincodes7_zor/tests, ignored: False
+Analyzing: temp_repos/admincodes7_zor/tests
+Debug: Checking temp_repos/admincodes7_zor/tests/test_context.py, ignored: False
+Analyzing: temp_repos/admincodes7_zor/tests/test_context.py
+Debug: Text file temp_repos/admincodes7_zor/tests/test_context.py, size: 2228, content size: 2228
+Debug: Checking temp_repos/admincodes7_zor/tests/test_git_utils.py, ignored: False
+Analyzing: temp_repos/admincodes7_zor/tests/test_git_utils.py
+Debug: Text file temp_repos/admincodes7_zor/tests/test_git_utils.py, size: 3331, content size: 3331
+Debug: Checking temp_repos/admincodes7_zor/tests/test_config.py, ignored: False
+Analyzing: temp_repos/admincodes7_zor/tests/test_config.py
+Debug: Text file temp_repos/admincodes7_zor/tests/test_config.py, size: 3038, content size: 3038
+Debug: Checking temp_repos/admincodes7_zor/tests/test_main.py, ignored: False
+Analyzing: temp_repos/admincodes7_zor/tests/test_main.py
+Debug: Text file temp_repos/admincodes7_zor/tests/test_main.py, size: 4530, content size: 4530
+Debug: Checking temp_repos/admincodes7_zor/tests/test_file_ops.py, ignored: False
+Analyzing: temp_repos/admincodes7_zor/tests/test_file_ops.py
+Debug: Text file temp_repos/admincodes7_zor/tests/test_file_ops.py, size: 2276, content size: 2276
+Debug: Checking temp_repos/admincodes7_zor/tests/test_safety.py, ignored: False
+Analyzing: temp_repos/admincodes7_zor/tests/test_safety.py
+Debug: Text file temp_repos/admincodes7_zor/tests/test_safety.py, size: 578, content size: 578
+Debug: Checking temp_repos/admincodes7_zor/tests/test_init.py, ignored: False
+Analyzing: temp_repos/admincodes7_zor/tests/test_init.py
+Debug: Text file temp_repos/admincodes7_zor/tests/test_init.py, size: 2557, content size: 2557
+Debug: Checking temp_repos/admincodes7_zor/tests/test_api.py, ignored: False
+Analyzing: temp_repos/admincodes7_zor/tests/test_api.py
+Debug: Text file temp_repos/admincodes7_zor/tests/test_api.py, size: 1304, content size: 1304
+Debug: Checking temp_repos/admincodes7_zor/tests/test_history.py, ignored: False
+Analyzing: temp_repos/admincodes7_zor/tests/test_history.py
+Debug: Text file temp_repos/admincodes7_zor/tests/test_history.py, size: 1762, content size: 1762
+Debug: Checking temp_repos/admincodes7_zor/tests/__init__.py, ignored: False
+Analyzing: temp_repos/admincodes7_zor/tests/__init__.py
+Debug: Text file temp_repos/admincodes7_zor/tests/__init__.py, size: 0, content size: 0
+Debug: Checking temp_repos/admincodes7_zor/tests/confest.py, ignored: False
+Analyzing: temp_repos/admincodes7_zor/tests/confest.py
+Debug: Text file temp_repos/admincodes7_zor/tests/confest.py, size: 573, content size: 573
+Debug: Checking temp_repos/admincodes7_zor/zor, ignored: False
+Analyzing: temp_repos/admincodes7_zor/zor
+Debug: Checking temp_repos/admincodes7_zor/zor/config.py, ignored: False
+Analyzing: temp_repos/admincodes7_zor/zor/config.py
+Debug: Text file temp_repos/admincodes7_zor/zor/config.py, size: 2287, content size: 2287
+Debug: Checking temp_repos/admincodes7_zor/zor/safety.py, ignored: False
+Analyzing: temp_repos/admincodes7_zor/zor/safety.py
+Debug: Text file temp_repos/admincodes7_zor/zor/safety.py, size: 261, content size: 261
+Debug: Checking temp_repos/admincodes7_zor/zor/api.py, ignored: False
+Analyzing: temp_repos/admincodes7_zor/zor/api.py
+Debug: Text file temp_repos/admincodes7_zor/zor/api.py, size: 2356, content size: 2356
+Debug: Checking temp_repos/admincodes7_zor/zor/file_ops.py, ignored: False
+Analyzing: temp_repos/admincodes7_zor/zor/file_ops.py
+Debug: Text file temp_repos/admincodes7_zor/zor/file_ops.py, size: 1889, content size: 1889
+Debug: Checking temp_repos/admincodes7_zor/zor/history.py, ignored: False
+Analyzing: temp_repos/admincodes7_zor/zor/history.py
+Debug: Text file temp_repos/admincodes7_zor/zor/history.py, size: 1284, content size: 1284
+Debug: Checking temp_repos/admincodes7_zor/zor/prompts, ignored: False
+Analyzing: temp_repos/admincodes7_zor/zor/prompts
+Debug: Checking temp_repos/admincodes7_zor/zor/prompts/zor_ascii.txt, ignored: False
+Analyzing: temp_repos/admincodes7_zor/zor/prompts/zor_ascii.txt
+Debug: Text file temp_repos/admincodes7_zor/zor/prompts/zor_ascii.txt, size: 413, content size: 155
+Debug: Checking temp_repos/admincodes7_zor/zor/prompts/planning_prompt.txt, ignored: False
+Analyzing: temp_repos/admincodes7_zor/zor/prompts/planning_prompt.txt
+Debug: Text file temp_repos/admincodes7_zor/zor/prompts/planning_prompt.txt, size: 2942, content size: 2942
+Debug: Checking temp_repos/admincodes7_zor/zor/prompts/refactor_prompt.txt, ignored: False
+Analyzing: temp_repos/admincodes7_zor/zor/prompts/refactor_prompt.txt
+Debug: Text file temp_repos/admincodes7_zor/zor/prompts/refactor_prompt.txt, size: 487, content size: 487
+Debug: Checking temp_repos/admincodes7_zor/zor/prompts/generate_test_prompt.txt, ignored: False
+Analyzing: temp_repos/admincodes7_zor/zor/prompts/generate_test_prompt.txt
+Debug: Text file temp_repos/admincodes7_zor/zor/prompts/generate_test_prompt.txt, size: 280, content size: 280
+Debug: Checking temp_repos/admincodes7_zor/zor/prompts/file_generation.txt, ignored: False
+Analyzing: temp_repos/admincodes7_zor/zor/prompts/file_generation.txt
+Debug: Text file temp_repos/admincodes7_zor/zor/prompts/file_generation.txt, size: 2599, content size: 2599
+Debug: Checking temp_repos/admincodes7_zor/zor/context.py, ignored: False
+Analyzing: temp_repos/admincodes7_zor/zor/context.py
+Debug: Text file temp_repos/admincodes7_zor/zor/context.py, size: 4564, content size: 4564
+Debug: Checking temp_repos/admincodes7_zor/zor/main.py, ignored: False
+Analyzing: temp_repos/admincodes7_zor/zor/main.py
+Debug: Text file temp_repos/admincodes7_zor/zor/main.py, size: 61008, content size: 60747
+Debug: Checking temp_repos/admincodes7_zor/zor/git_utils.py, ignored: False
+Analyzing: temp_repos/admincodes7_zor/zor/git_utils.py
+Debug: Text file temp_repos/admincodes7_zor/zor/git_utils.py, size: 545, content size: 545
+Debug: Checking temp_repos/admincodes7_zor/zor/__init__.py, ignored: False
+Analyzing: temp_repos/admincodes7_zor/zor/__init__.py
+Debug: Text file temp_repos/admincodes7_zor/zor/__init__.py, size: 0, content size: 0
+Debug: Checking temp_repos/admincodes7_zor/LICENSE, ignored: False
+Analyzing: temp_repos/admincodes7_zor/LICENSE
+Debug: Text file temp_repos/admincodes7_zor/LICENSE, size: 1073, content size: 1073
+Debug: Checking temp_repos/admincodes7_zor/pyproject.toml, ignored: False
+Analyzing: temp_repos/admincodes7_zor/pyproject.toml
+Debug: Text file temp_repos/admincodes7_zor/pyproject.toml, size: 1208, content size: 1208
+Debug: Checking temp_repos/admincodes7_zor/docs, ignored: False
+Analyzing: temp_repos/admincodes7_zor/docs
+Debug: Checking temp_repos/admincodes7_zor/docs/guide.md, ignored: False
+Analyzing: temp_repos/admincodes7_zor/docs/guide.md
+Debug: Text file temp_repos/admincodes7_zor/docs/guide.md, size: 4630, content size: 4630
+Debug: Checking temp_repos/admincodes7_zor/docs/commands.md, ignored: False
+Analyzing: temp_repos/admincodes7_zor/docs/commands.md
+Debug: Text file temp_repos/admincodes7_zor/docs/commands.md, size: 3470, content size: 3470
+Debug: Checking temp_repos/admincodes7_zor/docs/index.md, ignored: False
+Analyzing: temp_repos/admincodes7_zor/docs/index.md
+Debug: Text file temp_repos/admincodes7_zor/docs/index.md, size: 3952, content size: 3952
+Debug: Checking temp_repos/admincodes7_zor/README.md, ignored: False
+Analyzing: temp_repos/admincodes7_zor/README.md
+Debug: Text file temp_repos/admincodes7_zor/README.md, size: 3059, content size: 3037
+Debug: Checking temp_repos/admincodes7_zor/CHANGELOG.md, ignored: False
+Analyzing: temp_repos/admincodes7_zor/CHANGELOG.md
+Debug: Text file temp_repos/admincodes7_zor/CHANGELOG.md, size: 1279, content size: 1279
+Debug: Checking temp_repos/admincodes7_zor/MANIFEST.in, ignored: False
+Analyzing: temp_repos/admincodes7_zor/MANIFEST.in
+Debug: Text file temp_repos/admincodes7_zor/MANIFEST.in, size: 36, content size: 36
+Debug: Ignoring temp_repos/admincodes7_zor/.gitignore due to pattern .gitignore
+Debug: Checking temp_repos/admincodes7_zor/.gitignore, ignored: True
+Debug: Checking temp_repos/admincodes7_zor/requirements.txt, ignored: False
+Analyzing: temp_repos/admincodes7_zor/requirements.txt
+Debug: Text file temp_repos/admincodes7_zor/requirements.txt, size: 1263, content size: 1263
+Debug: Checking temp_repos/admincodes7_zor/mkdocs.yml, ignored: False
+Analyzing: temp_repos/admincodes7_zor/mkdocs.yml
+Debug: Text file temp_repos/admincodes7_zor/mkdocs.yml, size: 172, content size: 172
+Debug: Checking temp_repos/admincodes7_zor/CONTRIBUTING.md, ignored: False
+Analyzing: temp_repos/admincodes7_zor/CONTRIBUTING.md
+Debug: Text file temp_repos/admincodes7_zor/CONTRIBUTING.md, size: 3420, content size: 3306
+Debug: Checking temp_repos/admincodes7_zor/.github, ignored: False
+Analyzing: temp_repos/admincodes7_zor/.github
+Debug: Checking temp_repos/admincodes7_zor/.github/pull_request_template.md, ignored: False
+Analyzing: temp_repos/admincodes7_zor/.github/pull_request_template.md
+Debug: Text file temp_repos/admincodes7_zor/.github/pull_request_template.md, size: 712, content size: 712
+Debug: Checking temp_repos/admincodes7_zor/.github/ISSUE_TEMPLATE, ignored: False
+Analyzing: temp_repos/admincodes7_zor/.github/ISSUE_TEMPLATE
+Debug: Checking temp_repos/admincodes7_zor/.github/ISSUE_TEMPLATE/feature_request.md, ignored: False
+Analyzing: temp_repos/admincodes7_zor/.github/ISSUE_TEMPLATE/feature_request.md
+Debug: Text file temp_repos/admincodes7_zor/.github/ISSUE_TEMPLATE/feature_request.md, size: 604, content size: 604
+Debug: Checking temp_repos/admincodes7_zor/.github/ISSUE_TEMPLATE/bug_report.md, ignored: False
+Analyzing: temp_repos/admincodes7_zor/.github/ISSUE_TEMPLATE/bug_report.md
+Debug: Text file temp_repos/admincodes7_zor/.github/ISSUE_TEMPLATE/bug_report.md, size: 704, content size: 704
+Debug: Checking temp_repos/admincodes7_zor/.github/workflows, ignored: False
+Analyzing: temp_repos/admincodes7_zor/.github/workflows
+Debug: Checking temp_repos/admincodes7_zor/.github/workflows/docs.yml, ignored: False
+Analyzing: temp_repos/admincodes7_zor/.github/workflows/docs.yml
+Debug: Text file temp_repos/admincodes7_zor/.github/workflows/docs.yml, size: 897, content size: 897
+Debug: Checking temp_repos/admincodes7_zor/.github/workflows/python-package.yml, ignored: False
+Analyzing: temp_repos/admincodes7_zor/.github/workflows/python-package.yml
+Debug: Text file temp_repos/admincodes7_zor/.github/workflows/python-package.yml, size: 1503, content size: 1503
+Debug: Checking temp_repos/admincodes7_zor/assets, ignored: False
+Analyzing: temp_repos/admincodes7_zor/assets
+Debug: Checking temp_repos/admincodes7_zor/assets/card.jpg, ignored: False
+Analyzing: temp_repos/admincodes7_zor/assets/card.jpg
+Debug: Non-text file temp_repos/admincodes7_zor/assets/card.jpg, size: 30522
+Debug: Checking temp_repos/admincodes7_zor/assets/coverpage.png, ignored: False
+Analyzing: temp_repos/admincodes7_zor/assets/coverpage.png
+Debug: Non-text file temp_repos/admincodes7_zor/assets/coverpage.png, size: 111679
+
+Analysis saved to: /home/kraken/Projects/repo2ppt/hackdeck/admincodes7_zor_codebase_digest.md
++------------------+
+| Analysis Summary |
++------------------+
+└── admincodes7_zor
+    ├── tests
+    │   ├── test_context.py
+    │   ├── test_git_utils.py
+    │   ├── test_config.py
+    │   ├── test_main.py
+    │   ├── test_file_ops.py
+    │   ├── test_safety.py
+    │   ├── test_init.py
+    │   ├── test_api.py
+    │   ├── test_history.py
+    │   ├── __init__.py
+    │   └── confest.py
+    ├── zor
+    │   ├── config.py
+    │   ├── safety.py
+    │   ├── api.py
+    │   ├── file_ops.py
+    │   ├── history.py
+    │   ├── prompts
+    │   │   ├── zor_ascii.txt
+    │   │   ├── planning_prompt.txt
+    │   │   ├── refactor_prompt.txt
+    │   │   ├── generate_test_prompt.txt
+    │   │   └── file_generation.txt
+    │   ├── context.py
+    │   ├── main.py
+    │   ├── git_utils.py
+    │   └── __init__.py
+    ├── LICENSE
+    ├── pyproject.toml
+    ├── docs
+    │   ├── guide.md
+    │   ├── commands.md
+    │   └── index.md
+    ├── README.md
+    ├── CHANGELOG.md
+    ├── MANIFEST.in
+    ├── requirements.txt
+    ├── mkdocs.yml
+    ├── CONTRIBUTING.md
+    ├── .github
+    │   ├── pull_request_template.md
+    │   ├── ISSUE_TEMPLATE
+    │   │   ├── feature_request.md
+    │   │   └── bug_report.md
+    │   └── workflows
+    │       ├── docs.yml
+    │       └── python-package.yml
+    └── assets
+        ├── card.jpg
+        └── coverpage.png
+
+
+Summary:
+Total files analyzed: 43
+Total directories analyzed: 8
+Estimated output size: 132.98 KB
+Actual analyzed size: 266.87 KB
+Total tokens: 27910
+Actual text content size: 127.36 KB
+
+Do you want to copy the output to clipboard? (y/n): An error occurred: EOF when reading a line
+
+2026-01-02 09:53:53 | ERROR    | app.services.digest_service:generate_digest - STDERR: 
+2026-01-02 09:53:53 | ERROR    | app.services.digest_service:generate_digest - Error generating digest: Failed to generate digest: Unknown error
+2026-01-02 09:53:53 | ERROR    | app.main:generate_presentation - Error generating presentation: Failed to generate digest: Unknown error
+2026-01-02 09:55:38 | ERROR    | app.services.llm_service:analyze_codebase - Error during analysis: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2026-01-02 09:55:48 | ERROR    | app.services.llm_service:analyze_codebase - Error during analysis: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2026-01-02 09:55:56 | ERROR    | app.services.llm_service:analyze_codebase - Error during analysis: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2026-01-02 09:55:56 | ERROR    | app.main:generate_presentation - Error generating presentation: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2026-01-02 09:58:59 | ERROR    | app.services.llm_service:analyze_codebase - Error during analysis: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro
+Please retry in 472.125696ms. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerDay-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+}
+]
+2026-01-02 09:58:59 | ERROR    | app.services.llm_service:analyze_codebase - Error during analysis: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro
+Please retry in 112.66595ms. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerDay-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+}
+]
+2026-01-02 09:59:00 | ERROR    | app.services.llm_service:analyze_codebase - Error during analysis: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro
+Please retry in 59.913302495s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerDay-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+  seconds: 59
+}
+]
+2026-01-02 09:59:00 | ERROR    | app.main:generate_presentation - Error generating presentation: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro
+Please retry in 59.913302495s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerDay-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+  seconds: 59
+}
+]
