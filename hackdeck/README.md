@@ -213,7 +213,7 @@ presenton:
   verbosity: "concise"
   template: "general"
   include_title_slide: true
-  include_table_of_contents: false
+  # include_table_of_contents: false
   export_as: "pptx"
 ```
 

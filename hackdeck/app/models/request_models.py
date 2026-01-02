@@ -13,6 +13,11 @@ class GeneratePresentationRequest(BaseModel):
     language: Optional[str] = Field("English", description="Presentation language")
     template: Optional[str] = Field("general", description="Presentation template")
     export_as: Optional[str] = Field("pptx", description="Export format (pptx or pdf)")
+    include_title_slide: Optional[bool] = Field(True, description="Include title slide")
+    include_table_of_contents: Optional[bool] = Field(False, description="Include table of contents")
+    web_search: Optional[bool] = Field(False, description="Enable web search for content enrichment")
+    image_type: Optional[str] = Field("stock", description="Image type: stock or ai-generated")
+    theme: Optional[str] = Field("professional-dark", description="UI theme selected by user")
     
     @field_validator('github_url')
     @classmethod

@@ -83,6 +83,20 @@ async def generate_presentation(request: GeneratePresentationRequest):
     
     try:
         logger.info(f"Starting presentation generation for: {request.github_url}")
+        # Persist user's UI preferences into config.yaml so changes survive
+        try:
+            settings.update_config({
+                "presenton_tone": request.tone,
+                "presenton_verbosity": request.verbosity,
+                "presenton_template": request.template,
+                "presenton_export_format": request.export_as,
+                "presenton_include_title_slide": getattr(request, "include_title_slide", None),
+                "presenton_include_toc": getattr(request, "include_table_of_contents", None),
+                "default_slide_count": request.n_slides
+            })
+        except Exception:
+            # non-fatal: persist best-effort
+            logger.debug("Failed to persist UI preferences to config.yaml")
         
         # Step 1: Clone repository
         logger.info("Step 1/5: Cloning repository...")
@@ -111,6 +125,10 @@ async def generate_presentation(request: GeneratePresentationRequest):
             language=request.language,
             template=request.template,
             export_as=request.export_as
+            , include_title_slide=getattr(request, "include_title_slide", None)
+            , include_table_of_contents=getattr(request, "include_table_of_contents", None)
+            , web_search=getattr(request, "web_search", None)
+            , image_type=getattr(request, "image_type", None)
         )
         
         # Cleanup

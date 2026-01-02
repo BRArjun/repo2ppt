@@ -549,3 +549,694 @@ violations {
 2026-01-02 10:01:28 | INFO     | app.services.github_service:cleanup_repository - Cleaning up repository: temp_repos/admincodes7_zor
 2026-01-02 10:01:28 | INFO     | app.services.github_service:cleanup_repository - Repository cleaned up successfully
 2026-01-02 10:01:28 | INFO     | app.main:generate_presentation - Presentation generated successfully in 60.1 seconds
+2026-01-02 11:06:16 | INFO     | app.main:generate_presentation - Starting presentation generation for: https://github.com/admincodes7/zor
+2026-01-02 11:06:16 | INFO     | app.main:generate_presentation - Step 1/5: Cloning repository...
+2026-01-02 11:06:16 | INFO     | app.services.github_service:clone_repository - Cloning repository: https://github.com/admincodes7/zor
+2026-01-02 11:06:33 | INFO     | app.services.github_service:clone_repository - Repository cloned successfully to: temp_repos/admincodes7_zor
+2026-01-02 11:06:33 | INFO     | app.main:generate_presentation - Step 2/5: Analyzing codebase...
+2026-01-02 11:06:33 | INFO     | app.services.digest_service:generate_digest - Generating digest for repository: temp_repos/admincodes7_zor
+2026-01-02 11:06:33 | INFO     | app.services.digest_service:generate_digest - Running command: cdigest temp_repos/admincodes7_zor -d 10 -o markdown -f admincodes7_zor_codebase_digest.md --max-size 10240 --ignore *.pyc *.pyo *.pyd __pycache__ node_modules bower_components .git .svn .hg .gitignore venv .venv env .env *.env .idea .vscode *.log *.bak *.swp *.tmp .DS_Store Thumbs.db build dist .egg-info *.so *.dylib *.dll package-lock.json yarn.lock poetry.lock *.config.js *.config.ts
+2026-01-02 11:06:39 | INFO     | app.services.digest_service:generate_digest - Reading digest from file: admincodes7_zor_codebase_digest.md
+2026-01-02 11:06:39 | INFO     | app.services.digest_service:generate_digest - Digest generated successfully. Length: 134629 characters
+2026-01-02 11:06:39 | WARNING  | app.services.digest_service:summarize_digest - Digest too long (134629 chars). Truncating to 50000
+2026-01-02 11:06:39 | INFO     | app.main:generate_presentation - Step 3/5: Generating content with AI...
+2026-01-02 11:06:39 | INFO     | app.services.llm_service:analyze_codebase - Analyzing codebase with Gemini (attempt 1/3)
+2026-01-02 11:06:51 | INFO     | app.services.llm_service:analyze_codebase - Codebase analysis completed successfully
+2026-01-02 11:06:51 | INFO     | app.main:generate_presentation - Step 4/5: Formatting presentation content...
+2026-01-02 11:06:51 | INFO     | app.main:generate_presentation - Step 5/5: Creating presentation...
+2026-01-02 11:06:51 | INFO     | app.services.presenton_service:generate_presentation - Generating presentation with 6 slides
+2026-01-02 11:07:25 | INFO     | app.services.presenton_service:generate_presentation - Presentation generated successfully. ID: 857cc957-2b56-47f1-97a7-0bb89e7f6c3d
+2026-01-02 11:07:25 | INFO     | app.services.github_service:cleanup_repository - Cleaning up repository: temp_repos/admincodes7_zor
+2026-01-02 11:07:25 | INFO     | app.services.github_service:cleanup_repository - Repository cleaned up successfully
+2026-01-02 11:07:25 | INFO     | app.main:generate_presentation - Presentation generated successfully in 69.2 seconds
+2026-01-02 11:10:36 | INFO     | app.main:generate_presentation - Starting presentation generation for: https://github.com/admincodes7/zor
+2026-01-02 11:10:36 | INFO     | app.main:generate_presentation - Step 1/5: Cloning repository...
+2026-01-02 11:10:36 | INFO     | app.services.github_service:clone_repository - Cloning repository: https://github.com/admincodes7/zor
+2026-01-02 11:10:39 | INFO     | app.services.github_service:clone_repository - Repository cloned successfully to: temp_repos/admincodes7_zor
+2026-01-02 11:10:39 | INFO     | app.main:generate_presentation - Step 2/5: Analyzing codebase...
+2026-01-02 11:10:39 | INFO     | app.services.digest_service:generate_digest - Generating digest for repository: temp_repos/admincodes7_zor
+2026-01-02 11:10:39 | INFO     | app.services.digest_service:generate_digest - Running command: cdigest temp_repos/admincodes7_zor -d 10 -o markdown -f admincodes7_zor_codebase_digest.md --max-size 10240 --ignore *.pyc *.pyo *.pyd __pycache__ node_modules bower_components .git .svn .hg .gitignore venv .venv env .env *.env .idea .vscode *.log *.bak *.swp *.tmp .DS_Store Thumbs.db build dist .egg-info *.so *.dylib *.dll package-lock.json yarn.lock poetry.lock *.config.js *.config.ts
+2026-01-02 11:10:39 | INFO     | app.services.digest_service:generate_digest - Reading digest from file: admincodes7_zor_codebase_digest.md
+2026-01-02 11:10:39 | INFO     | app.services.digest_service:generate_digest - Digest generated successfully. Length: 134629 characters
+2026-01-02 11:10:39 | WARNING  | app.services.digest_service:summarize_digest - Digest too long (134629 chars). Truncating to 50000
+2026-01-02 11:10:39 | INFO     | app.main:generate_presentation - Step 3/5: Generating content with AI...
+2026-01-02 11:10:39 | INFO     | app.services.llm_service:analyze_codebase - Analyzing codebase with Gemini (attempt 1/3)
+2026-01-02 11:10:51 | INFO     | app.services.llm_service:analyze_codebase - Codebase analysis completed successfully
+2026-01-02 11:10:51 | INFO     | app.main:generate_presentation - Step 4/5: Formatting presentation content...
+2026-01-02 11:10:51 | INFO     | app.main:generate_presentation - Step 5/5: Creating presentation...
+2026-01-02 11:10:51 | INFO     | app.services.presenton_service:generate_presentation - Generating presentation with 5 slides
+2026-01-02 11:10:52 | ERROR    | app.services.presenton_service:generate_presentation - Presenton API error: 400 - {'detail': 'Not enough credits, 5 required, but you have 1.0. Please upgrade your plan or buy more credits.'}
+2026-01-02 11:10:52 | ERROR    | app.services.presenton_service:generate_presentation - Error generating presentation: Failed to generate presentation: {'detail': 'Not enough credits, 5 required, but you have 1.0. Please upgrade your plan or buy more credits.'}
+2026-01-02 11:10:52 | ERROR    | app.main:generate_presentation - Error generating presentation: Failed to generate presentation: {'detail': 'Not enough credits, 5 required, but you have 1.0. Please upgrade your plan or buy more credits.'}
+2026-01-02 11:10:52 | INFO     | app.services.github_service:cleanup_repository - Cleaning up repository: temp_repos/admincodes7_zor
+2026-01-02 11:10:52 | INFO     | app.services.github_service:cleanup_repository - Repository cleaned up successfully
+2026-01-02 11:16:03 | INFO     | app.main:generate_presentation - Starting presentation generation for: https://github.com/admincodes7/zor
+2026-01-02 11:16:03 | INFO     | app.main:generate_presentation - Step 1/5: Cloning repository...
+2026-01-02 11:16:03 | INFO     | app.services.github_service:clone_repository - Cloning repository: https://github.com/admincodes7/zor
+2026-01-02 11:16:05 | INFO     | app.services.github_service:clone_repository - Repository cloned successfully to: temp_repos/admincodes7_zor
+2026-01-02 11:16:05 | INFO     | app.main:generate_presentation - Step 2/5: Analyzing codebase...
+2026-01-02 11:16:05 | INFO     | app.services.digest_service:generate_digest - Generating digest for repository: temp_repos/admincodes7_zor
+2026-01-02 11:16:05 | INFO     | app.services.digest_service:generate_digest - Running command: cdigest temp_repos/admincodes7_zor -d 10 -o markdown -f admincodes7_zor_codebase_digest.md --max-size 10240 --ignore *.pyc *.pyo *.pyd __pycache__ node_modules bower_components .git .svn .hg .gitignore venv .venv env .env *.env .idea .vscode *.log *.bak *.swp *.tmp .DS_Store Thumbs.db build dist .egg-info *.so *.dylib *.dll package-lock.json yarn.lock poetry.lock *.config.js *.config.ts
+2026-01-02 11:16:06 | INFO     | app.services.digest_service:generate_digest - Reading digest from file: admincodes7_zor_codebase_digest.md
+2026-01-02 11:16:06 | INFO     | app.services.digest_service:generate_digest - Digest generated successfully. Length: 134629 characters
+2026-01-02 11:16:06 | WARNING  | app.services.digest_service:summarize_digest - Digest too long (134629 chars). Truncating to 50000
+2026-01-02 11:16:06 | INFO     | app.main:generate_presentation - Step 3/5: Generating content with AI...
+2026-01-02 11:16:06 | INFO     | app.services.llm_service:analyze_codebase - Analyzing codebase with Gemini (attempt 1/3)
+2026-01-02 11:16:07 | ERROR    | app.services.llm_service:analyze_codebase - Error during analysis: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro
+Please retry in 52.96697979s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerDay-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+  seconds: 52
+}
+]
+2026-01-02 11:16:07 | INFO     | app.services.llm_service:analyze_codebase - Retrying...
+2026-01-02 11:16:07 | INFO     | app.services.llm_service:analyze_codebase - Analyzing codebase with Gemini (attempt 2/3)
+2026-01-02 11:16:07 | ERROR    | app.services.llm_service:analyze_codebase - Error during analysis: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro
+Please retry in 52.767591827s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerDay-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+  seconds: 52
+}
+]
+2026-01-02 11:16:07 | INFO     | app.services.llm_service:analyze_codebase - Retrying...
+2026-01-02 11:16:07 | INFO     | app.services.llm_service:analyze_codebase - Analyzing codebase with Gemini (attempt 3/3)
+2026-01-02 11:16:07 | ERROR    | app.services.llm_service:analyze_codebase - Error during analysis: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro
+Please retry in 52.564341061s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerDay-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+  seconds: 52
+}
+]
+2026-01-02 11:16:07 | ERROR    | app.main:generate_presentation - Error generating presentation: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro
+Please retry in 52.564341061s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerDay-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+  seconds: 52
+}
+]
+2026-01-02 11:16:07 | INFO     | app.services.github_service:cleanup_repository - Cleaning up repository: temp_repos/admincodes7_zor
+2026-01-02 11:16:07 | INFO     | app.services.github_service:cleanup_repository - Repository cleaned up successfully
+2026-01-02 11:16:19 | INFO     | app.main:generate_presentation - Starting presentation generation for: https://github.com/admincodes7/zor
+2026-01-02 11:16:19 | INFO     | app.main:generate_presentation - Step 1/5: Cloning repository...
+2026-01-02 11:16:19 | INFO     | app.services.github_service:clone_repository - Cloning repository: https://github.com/admincodes7/zor
+2026-01-02 11:16:21 | INFO     | app.services.github_service:clone_repository - Repository cloned successfully to: temp_repos/admincodes7_zor
+2026-01-02 11:16:21 | INFO     | app.main:generate_presentation - Step 2/5: Analyzing codebase...
+2026-01-02 11:16:21 | INFO     | app.services.digest_service:generate_digest - Generating digest for repository: temp_repos/admincodes7_zor
+2026-01-02 11:16:21 | INFO     | app.services.digest_service:generate_digest - Running command: cdigest temp_repos/admincodes7_zor -d 10 -o markdown -f admincodes7_zor_codebase_digest.md --max-size 10240 --ignore *.pyc *.pyo *.pyd __pycache__ node_modules bower_components .git .svn .hg .gitignore venv .venv env .env *.env .idea .vscode *.log *.bak *.swp *.tmp .DS_Store Thumbs.db build dist .egg-info *.so *.dylib *.dll package-lock.json yarn.lock poetry.lock *.config.js *.config.ts
+2026-01-02 11:16:22 | INFO     | app.services.digest_service:generate_digest - Reading digest from file: admincodes7_zor_codebase_digest.md
+2026-01-02 11:16:22 | INFO     | app.services.digest_service:generate_digest - Digest generated successfully. Length: 134629 characters
+2026-01-02 11:16:22 | WARNING  | app.services.digest_service:summarize_digest - Digest too long (134629 chars). Truncating to 50000
+2026-01-02 11:16:22 | INFO     | app.main:generate_presentation - Step 3/5: Generating content with AI...
+2026-01-02 11:16:22 | INFO     | app.services.llm_service:analyze_codebase - Analyzing codebase with Gemini (attempt 1/3)
+2026-01-02 11:16:22 | ERROR    | app.services.llm_service:analyze_codebase - Error during analysis: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro
+Please retry in 37.284374496s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerDay-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+  seconds: 37
+}
+]
+2026-01-02 11:16:22 | INFO     | app.services.llm_service:analyze_codebase - Retrying...
+2026-01-02 11:16:22 | INFO     | app.services.llm_service:analyze_codebase - Analyzing codebase with Gemini (attempt 2/3)
+2026-01-02 11:16:22 | ERROR    | app.services.llm_service:analyze_codebase - Error during analysis: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro
+Please retry in 37.087014702s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerDay-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+  seconds: 37
+}
+]
+2026-01-02 11:16:22 | INFO     | app.services.llm_service:analyze_codebase - Retrying...
+2026-01-02 11:16:22 | INFO     | app.services.llm_service:analyze_codebase - Analyzing codebase with Gemini (attempt 3/3)
+2026-01-02 11:16:23 | ERROR    | app.services.llm_service:analyze_codebase - Error during analysis: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro
+Please retry in 36.891695678s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerDay-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+  seconds: 36
+}
+]
+2026-01-02 11:16:23 | ERROR    | app.main:generate_presentation - Error generating presentation: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro
+Please retry in 36.891695678s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerDay-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+  seconds: 36
+}
+]
+2026-01-02 11:16:23 | INFO     | app.services.github_service:cleanup_repository - Cleaning up repository: temp_repos/admincodes7_zor
+2026-01-02 11:16:23 | INFO     | app.services.github_service:cleanup_repository - Repository cleaned up successfully
+2026-01-02 11:17:08 | INFO     | app.main:generate_presentation - Starting presentation generation for: https://github.com/admincodes7/zor
+2026-01-02 11:17:08 | INFO     | app.main:generate_presentation - Step 1/5: Cloning repository...
+2026-01-02 11:17:08 | INFO     | app.services.github_service:clone_repository - Cloning repository: https://github.com/admincodes7/zor
+2026-01-02 11:17:10 | INFO     | app.services.github_service:clone_repository - Repository cloned successfully to: temp_repos/admincodes7_zor
+2026-01-02 11:17:10 | INFO     | app.main:generate_presentation - Step 2/5: Analyzing codebase...
+2026-01-02 11:17:10 | INFO     | app.services.digest_service:generate_digest - Generating digest for repository: temp_repos/admincodes7_zor
+2026-01-02 11:17:10 | INFO     | app.services.digest_service:generate_digest - Running command: cdigest temp_repos/admincodes7_zor -d 10 -o markdown -f admincodes7_zor_codebase_digest.md --max-size 10240 --ignore *.pyc *.pyo *.pyd __pycache__ node_modules bower_components .git .svn .hg .gitignore venv .venv env .env *.env .idea .vscode *.log *.bak *.swp *.tmp .DS_Store Thumbs.db build dist .egg-info *.so *.dylib *.dll package-lock.json yarn.lock poetry.lock *.config.js *.config.ts
+2026-01-02 11:17:11 | INFO     | app.services.digest_service:generate_digest - Reading digest from file: admincodes7_zor_codebase_digest.md
+2026-01-02 11:17:11 | INFO     | app.services.digest_service:generate_digest - Digest generated successfully. Length: 134629 characters
+2026-01-02 11:17:11 | WARNING  | app.services.digest_service:summarize_digest - Digest too long (134629 chars). Truncating to 50000
+2026-01-02 11:17:11 | INFO     | app.main:generate_presentation - Step 3/5: Generating content with AI...
+2026-01-02 11:17:11 | INFO     | app.services.llm_service:analyze_codebase - Analyzing codebase with Gemini (attempt 1/3)
+2026-01-02 11:17:29 | INFO     | app.services.llm_service:analyze_codebase - Codebase analysis completed successfully
+2026-01-02 11:17:29 | INFO     | app.main:generate_presentation - Step 4/5: Formatting presentation content...
+2026-01-02 11:17:29 | INFO     | app.main:generate_presentation - Step 5/5: Creating presentation...
+2026-01-02 11:17:29 | INFO     | app.services.presenton_service:generate_presentation - Generating presentation with 6 slides
+2026-01-02 11:18:08 | INFO     | app.services.presenton_service:generate_presentation - Presentation generated successfully. ID: 6f116c53-d7eb-4c12-ba91-d168b90c63de
+2026-01-02 11:18:08 | INFO     | app.services.github_service:cleanup_repository - Cleaning up repository: temp_repos/admincodes7_zor
+2026-01-02 11:18:08 | INFO     | app.services.github_service:cleanup_repository - Repository cleaned up successfully
+2026-01-02 11:18:08 | INFO     | app.main:generate_presentation - Presentation generated successfully in 59.8 seconds
+2026-01-02 11:23:21 | INFO     | app.main:generate_presentation - Starting presentation generation for: https://github.com/admincodes7/zor
+2026-01-02 11:23:21 | INFO     | app.main:generate_presentation - Step 1/5: Cloning repository...
+2026-01-02 11:23:21 | INFO     | app.services.github_service:clone_repository - Cloning repository: https://github.com/admincodes7/zor
+2026-01-02 11:23:23 | INFO     | app.services.github_service:clone_repository - Repository cloned successfully to: temp_repos/admincodes7_zor
+2026-01-02 11:23:23 | INFO     | app.main:generate_presentation - Step 2/5: Analyzing codebase...
+2026-01-02 11:23:23 | INFO     | app.services.digest_service:generate_digest - Generating digest for repository: temp_repos/admincodes7_zor
+2026-01-02 11:23:23 | INFO     | app.services.digest_service:generate_digest - Running command: cdigest temp_repos/admincodes7_zor -d 10 -o markdown -f admincodes7_zor_codebase_digest.md --max-size 10240 --ignore *.pyc *.pyo *.pyd __pycache__ node_modules bower_components .git .svn .hg .gitignore venv .venv env .env *.env .idea .vscode *.log *.bak *.swp *.tmp .DS_Store Thumbs.db build dist .egg-info *.so *.dylib *.dll package-lock.json yarn.lock poetry.lock *.config.js *.config.ts
+2026-01-02 11:23:24 | INFO     | app.services.digest_service:generate_digest - Reading digest from file: admincodes7_zor_codebase_digest.md
+2026-01-02 11:23:24 | INFO     | app.services.digest_service:generate_digest - Digest generated successfully. Length: 134629 characters
+2026-01-02 11:23:24 | WARNING  | app.services.digest_service:summarize_digest - Digest too long (134629 chars). Truncating to 50000
+2026-01-02 11:23:24 | INFO     | app.main:generate_presentation - Step 3/5: Generating content with AI...
+2026-01-02 11:23:24 | INFO     | app.services.llm_service:analyze_codebase - Analyzing codebase with Gemini (attempt 1/3)
+2026-01-02 11:23:53 | INFO     | app.services.llm_service:analyze_codebase - Codebase analysis completed successfully
+2026-01-02 11:23:53 | INFO     | app.main:generate_presentation - Step 4/5: Formatting presentation content...
+2026-01-02 11:23:53 | INFO     | app.main:generate_presentation - Step 5/5: Creating presentation...
+2026-01-02 11:23:53 | INFO     | app.services.presenton_service:generate_presentation - Generating presentation with 6 slides
+2026-01-02 11:24:29 | INFO     | app.services.presenton_service:generate_presentation - Presentation generated successfully. ID: 19bd7255-95ef-479d-bea9-d6fd2618d362
+2026-01-02 11:24:29 | INFO     | app.services.github_service:cleanup_repository - Cleaning up repository: temp_repos/admincodes7_zor
+2026-01-02 11:24:29 | INFO     | app.services.github_service:cleanup_repository - Repository cleaned up successfully
+2026-01-02 11:24:29 | INFO     | app.main:generate_presentation - Presentation generated successfully in 68.0 seconds
+2026-01-02 11:40:56 | INFO     | app.main:generate_presentation - Starting presentation generation for: https://github.com/admincodes7/zor
+2026-01-02 11:40:56 | DEBUG    | app.main:generate_presentation - Failed to persist UI preferences to config.yaml
+2026-01-02 11:40:56 | INFO     | app.main:generate_presentation - Step 1/5: Cloning repository...
+2026-01-02 11:40:56 | INFO     | app.services.github_service:clone_repository - Cloning repository: https://github.com/admincodes7/zor
+2026-01-02 11:40:58 | INFO     | app.services.github_service:clone_repository - Repository cloned successfully to: temp_repos/admincodes7_zor
+2026-01-02 11:40:58 | INFO     | app.main:generate_presentation - Step 2/5: Analyzing codebase...
+2026-01-02 11:40:58 | INFO     | app.services.digest_service:generate_digest - Generating digest for repository: temp_repos/admincodes7_zor
+2026-01-02 11:40:58 | INFO     | app.services.digest_service:generate_digest - Running command: cdigest temp_repos/admincodes7_zor -d 10 -o markdown -f admincodes7_zor_codebase_digest.md --max-size 10240 --ignore *.pyc *.pyo *.pyd __pycache__ node_modules bower_components .git .svn .hg .gitignore venv .venv env .env *.env .idea .vscode *.log *.bak *.swp *.tmp .DS_Store Thumbs.db build dist .egg-info *.so *.dylib *.dll package-lock.json yarn.lock poetry.lock *.config.js *.config.ts
+2026-01-02 11:40:59 | INFO     | app.services.digest_service:generate_digest - Reading digest from file: admincodes7_zor_codebase_digest.md
+2026-01-02 11:40:59 | INFO     | app.services.digest_service:generate_digest - Digest generated successfully. Length: 134629 characters
+2026-01-02 11:40:59 | WARNING  | app.services.digest_service:summarize_digest - Digest too long (134629 chars). Truncating to 50000
+2026-01-02 11:40:59 | INFO     | app.main:generate_presentation - Step 3/5: Generating content with AI...
+2026-01-02 11:40:59 | INFO     | app.services.llm_service:analyze_codebase - Analyzing codebase with Gemini (attempt 1/3)
+2026-01-02 11:41:12 | INFO     | app.services.llm_service:analyze_codebase - Codebase analysis completed successfully
+2026-01-02 11:41:12 | INFO     | app.main:generate_presentation - Step 4/5: Formatting presentation content...
+2026-01-02 11:41:12 | INFO     | app.main:generate_presentation - Step 5/5: Creating presentation...
+2026-01-02 11:41:12 | INFO     | app.services.presenton_service:generate_presentation - Generating presentation with 6 slides
+2026-01-02 11:41:18 | ERROR    | app.services.presenton_service:generate_presentation - Presenton API error: 400 - {'detail': 'Not enough credits, 6 required, but you have 3.0. Please upgrade your plan or buy more credits.'}
+2026-01-02 11:41:18 | ERROR    | app.services.presenton_service:generate_presentation - Error generating presentation: Failed to generate presentation: {'detail': 'Not enough credits, 6 required, but you have 3.0. Please upgrade your plan or buy more credits.'}
+2026-01-02 11:41:18 | ERROR    | app.main:generate_presentation - Error generating presentation: Failed to generate presentation: {'detail': 'Not enough credits, 6 required, but you have 3.0. Please upgrade your plan or buy more credits.'}
+2026-01-02 11:41:18 | INFO     | app.services.github_service:cleanup_repository - Cleaning up repository: temp_repos/admincodes7_zor
+2026-01-02 11:41:18 | INFO     | app.services.github_service:cleanup_repository - Repository cleaned up successfully
+2026-01-02 11:43:03 | INFO     | app.main:generate_presentation - Starting presentation generation for: https://github.com/admincodes7/zor
+2026-01-02 11:43:03 | DEBUG    | app.main:generate_presentation - Failed to persist UI preferences to config.yaml
+2026-01-02 11:43:03 | INFO     | app.main:generate_presentation - Step 1/5: Cloning repository...
+2026-01-02 11:43:03 | INFO     | app.services.github_service:clone_repository - Cloning repository: https://github.com/admincodes7/zor
+2026-01-02 11:43:05 | INFO     | app.services.github_service:clone_repository - Repository cloned successfully to: temp_repos/admincodes7_zor
+2026-01-02 11:43:05 | INFO     | app.main:generate_presentation - Step 2/5: Analyzing codebase...
+2026-01-02 11:43:05 | INFO     | app.services.digest_service:generate_digest - Generating digest for repository: temp_repos/admincodes7_zor
+2026-01-02 11:43:05 | INFO     | app.services.digest_service:generate_digest - Running command: cdigest temp_repos/admincodes7_zor -d 10 -o markdown -f admincodes7_zor_codebase_digest.md --max-size 10240 --ignore *.pyc *.pyo *.pyd __pycache__ node_modules bower_components .git .svn .hg .gitignore venv .venv env .env *.env .idea .vscode *.log *.bak *.swp *.tmp .DS_Store Thumbs.db build dist .egg-info *.so *.dylib *.dll package-lock.json yarn.lock poetry.lock *.config.js *.config.ts
+2026-01-02 11:43:06 | INFO     | app.services.digest_service:generate_digest - Reading digest from file: admincodes7_zor_codebase_digest.md
+2026-01-02 11:43:06 | INFO     | app.services.digest_service:generate_digest - Digest generated successfully. Length: 134629 characters
+2026-01-02 11:43:06 | WARNING  | app.services.digest_service:summarize_digest - Digest too long (134629 chars). Truncating to 50000
+2026-01-02 11:43:06 | INFO     | app.main:generate_presentation - Step 3/5: Generating content with AI...
+2026-01-02 11:43:06 | INFO     | app.services.llm_service:analyze_codebase - Analyzing codebase with Gemini (attempt 1/3)
+2026-01-02 11:43:18 | INFO     | app.services.llm_service:analyze_codebase - Codebase analysis completed successfully
+2026-01-02 11:43:18 | INFO     | app.main:generate_presentation - Step 4/5: Formatting presentation content...
+2026-01-02 11:43:18 | INFO     | app.main:generate_presentation - Step 5/5: Creating presentation...
+2026-01-02 11:43:18 | INFO     | app.services.presenton_service:generate_presentation - Generating presentation with 5 slides
+2026-01-02 11:43:25 | ERROR    | app.services.presenton_service:generate_presentation - Presenton API error: 400 - {'detail': 'Not enough credits, 5 required, but you have 3.0. Please upgrade your plan or buy more credits.'}
+2026-01-02 11:43:25 | ERROR    | app.services.presenton_service:generate_presentation - Error generating presentation: Failed to generate presentation: {'detail': 'Not enough credits, 5 required, but you have 3.0. Please upgrade your plan or buy more credits.'}
+2026-01-02 11:43:25 | ERROR    | app.main:generate_presentation - Error generating presentation: Failed to generate presentation: {'detail': 'Not enough credits, 5 required, but you have 3.0. Please upgrade your plan or buy more credits.'}
+2026-01-02 11:43:25 | INFO     | app.services.github_service:cleanup_repository - Cleaning up repository: temp_repos/admincodes7_zor
+2026-01-02 11:43:25 | INFO     | app.services.github_service:cleanup_repository - Repository cleaned up successfully
+2026-01-02 11:44:37 | INFO     | app.main:generate_presentation - Starting presentation generation for: https://github.com/admincodes7/zor
+2026-01-02 11:44:37 | DEBUG    | app.main:generate_presentation - Failed to persist UI preferences to config.yaml
+2026-01-02 11:44:37 | INFO     | app.main:generate_presentation - Step 1/5: Cloning repository...
+2026-01-02 11:44:37 | INFO     | app.services.github_service:clone_repository - Cloning repository: https://github.com/admincodes7/zor
+2026-01-02 11:44:38 | INFO     | app.services.github_service:clone_repository - Repository cloned successfully to: temp_repos/admincodes7_zor
+2026-01-02 11:44:38 | INFO     | app.main:generate_presentation - Step 2/5: Analyzing codebase...
+2026-01-02 11:44:38 | INFO     | app.services.digest_service:generate_digest - Generating digest for repository: temp_repos/admincodes7_zor
+2026-01-02 11:44:38 | INFO     | app.services.digest_service:generate_digest - Running command: cdigest temp_repos/admincodes7_zor -d 10 -o markdown -f admincodes7_zor_codebase_digest.md --max-size 10240 --ignore *.pyc *.pyo *.pyd __pycache__ node_modules bower_components .git .svn .hg .gitignore venv .venv env .env *.env .idea .vscode *.log *.bak *.swp *.tmp .DS_Store Thumbs.db build dist .egg-info *.so *.dylib *.dll package-lock.json yarn.lock poetry.lock *.config.js *.config.ts
+2026-01-02 11:44:39 | INFO     | app.services.digest_service:generate_digest - Reading digest from file: admincodes7_zor_codebase_digest.md
+2026-01-02 11:44:39 | INFO     | app.services.digest_service:generate_digest - Digest generated successfully. Length: 134629 characters
+2026-01-02 11:44:39 | WARNING  | app.services.digest_service:summarize_digest - Digest too long (134629 chars). Truncating to 50000
+2026-01-02 11:44:39 | INFO     | app.main:generate_presentation - Step 3/5: Generating content with AI...
+2026-01-02 11:44:39 | INFO     | app.services.llm_service:analyze_codebase - Analyzing codebase with Gemini (attempt 1/3)
+2026-01-02 11:44:57 | INFO     | app.services.llm_service:analyze_codebase - Codebase analysis completed successfully
+2026-01-02 11:44:57 | INFO     | app.main:generate_presentation - Step 4/5: Formatting presentation content...
+2026-01-02 11:44:57 | INFO     | app.main:generate_presentation - Step 5/5: Creating presentation...
+2026-01-02 11:44:57 | INFO     | app.services.presenton_service:generate_presentation - Generating presentation with 5 slides
+2026-01-02 11:45:47 | INFO     | app.services.presenton_service:generate_presentation - Presentation generated successfully. ID: 9cb40d44-f4df-4310-ac2d-ea48390382da
+2026-01-02 11:45:47 | INFO     | app.services.github_service:cleanup_repository - Cleaning up repository: temp_repos/admincodes7_zor
+2026-01-02 11:45:47 | INFO     | app.services.github_service:cleanup_repository - Repository cleaned up successfully
+2026-01-02 11:45:47 | INFO     | app.main:generate_presentation - Presentation generated successfully in 70.0 seconds
+2026-01-02 11:46:53 | INFO     | app.main:generate_presentation - Starting presentation generation for: https://github.com/BRArjun/Word2Vec
+2026-01-02 11:46:53 | DEBUG    | app.main:generate_presentation - Failed to persist UI preferences to config.yaml
+2026-01-02 11:46:53 | INFO     | app.main:generate_presentation - Step 1/5: Cloning repository...
+2026-01-02 11:46:53 | INFO     | app.services.github_service:clone_repository - Cloning repository: https://github.com/BRArjun/Word2Vec
+2026-01-02 11:46:55 | INFO     | app.services.github_service:clone_repository - Repository cloned successfully to: temp_repos/BRArjun_Word2Vec
+2026-01-02 11:46:55 | INFO     | app.main:generate_presentation - Step 2/5: Analyzing codebase...
+2026-01-02 11:46:55 | INFO     | app.services.digest_service:generate_digest - Generating digest for repository: temp_repos/BRArjun_Word2Vec
+2026-01-02 11:46:55 | INFO     | app.services.digest_service:generate_digest - Running command: cdigest temp_repos/BRArjun_Word2Vec -d 10 -o markdown -f BRArjun_Word2Vec_codebase_digest.md --max-size 10240 --ignore *.pyc *.pyo *.pyd __pycache__ node_modules bower_components .git .svn .hg .gitignore venv .venv env .env *.env .idea .vscode *.log *.bak *.swp *.tmp .DS_Store Thumbs.db build dist .egg-info *.so *.dylib *.dll package-lock.json yarn.lock poetry.lock *.config.js *.config.ts
+2026-01-02 11:46:56 | INFO     | app.services.digest_service:generate_digest - Reading digest from file: BRArjun_Word2Vec_codebase_digest.md
+2026-01-02 11:46:56 | INFO     | app.services.digest_service:generate_digest - Digest generated successfully. Length: 154119 characters
+2026-01-02 11:46:56 | WARNING  | app.services.digest_service:summarize_digest - Digest too long (154119 chars). Truncating to 50000
+2026-01-02 11:46:56 | INFO     | app.main:generate_presentation - Step 3/5: Generating content with AI...
+2026-01-02 11:46:56 | INFO     | app.services.llm_service:analyze_codebase - Analyzing codebase with Gemini (attempt 1/3)
+2026-01-02 11:47:06 | INFO     | app.services.llm_service:analyze_codebase - Codebase analysis completed successfully
+2026-01-02 11:47:06 | INFO     | app.main:generate_presentation - Step 4/5: Formatting presentation content...
+2026-01-02 11:47:06 | INFO     | app.main:generate_presentation - Step 5/5: Creating presentation...
+2026-01-02 11:47:06 | INFO     | app.services.presenton_service:generate_presentation - Generating presentation with 6 slides
+2026-01-02 11:47:40 | INFO     | app.services.presenton_service:generate_presentation - Presentation generated successfully. ID: 7be2481f-2d7f-4990-8fcb-d35be3afd962
+2026-01-02 11:47:40 | INFO     | app.services.github_service:cleanup_repository - Cleaning up repository: temp_repos/BRArjun_Word2Vec
+2026-01-02 11:47:40 | INFO     | app.services.github_service:cleanup_repository - Repository cleaned up successfully
+2026-01-02 11:47:40 | INFO     | app.main:generate_presentation - Presentation generated successfully in 47.0 seconds

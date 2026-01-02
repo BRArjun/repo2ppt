@@ -26,7 +26,11 @@ class PresentonService:
         verbosity: str = None,
         language: str = "English",
         template: str = None,
-        export_as: str = None
+        export_as: str = None,
+        include_title_slide: Optional[bool] = None,
+        include_table_of_contents: Optional[bool] = None,
+        web_search: Optional[bool] = None,
+        image_type: Optional[str] = None,
     ) -> Dict:
         """
         Generate presentation using Presenton API
@@ -53,6 +57,10 @@ class PresentonService:
             verbosity = verbosity or settings.presenton_verbosity
             template = template or settings.presenton_template
             export_as = export_as or settings.presenton_export_format
+            include_title_slide = include_title_slide if include_title_slide is not None else settings.presenton_include_title_slide
+            include_table_of_contents = include_table_of_contents if include_table_of_contents is not None else settings.presenton_include_toc
+            web_search = web_search if web_search is not None else False
+            image_type = image_type or "stock"
             
             logger.info(f"Generating presentation with {n_slides} slides")
             
@@ -65,12 +73,12 @@ class PresentonService:
                 "n_slides": n_slides,
                 "language": language,
                 "template": template,
-                "include_title_slide": settings.presenton_include_title_slide,
-                "include_table_of_contents": settings.presenton_include_toc,
+                "include_title_slide": include_title_slide,
+                "include_table_of_contents": include_table_of_contents,
                 "export_as": export_as,
                 "markdown_emphasis": True,
-                "web_search": False,
-                "image_type": "stock"
+                "web_search": web_search,
+                "image_type": image_type
             }
             
             # Make API request

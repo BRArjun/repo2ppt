@@ -50,7 +50,8 @@ presenton:
   verbosity: "concise"
   template: "general"
   include_title_slide: true
-  include_table_of_contents: false
+  include_table_of_contents: true
+  enable_web_search: true
   export_format: "pptx"
 
 application:
