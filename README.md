@@ -20,7 +20,6 @@ repo2ppt helps hackathon participants automatically generate professional presen
 - [Project Structure](#project-structure)
 - [Development](#development)
 - [Contributing](#contributing)
-- [License](#license)
 
 ---
 
@@ -42,7 +41,7 @@ All with just a GitHub link!
 
 ---
 
-## ✨ Features
+## Features
 
 - **One-Click Generation**: Just paste your GitHub repo link
 - **Intelligent Analysis**: Uses LLM to understand your codebase
@@ -54,7 +53,7 @@ All with just a GitHub link!
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 ### Frontend
 - **Streamlit** - Simple, fast web interface
@@ -79,7 +78,7 @@ All with just a GitHub link!
 
 ---
 
-## 🏗 Architecture
+## Architecture
 
 ### System Components
 
@@ -167,9 +166,7 @@ Create a `.env` file in the root directory:
 
 ```env
 # LLM API Configuration (Choose one)
-ANTHROPIC_API_KEY=your_claude_api_key_here
-# OR
-OPENAI_API_KEY=your_openai_api_key_here
+GOOGLE_API_KEY=your_gemini_api_key_here
 
 # Presenton API
 PRESENTON_API_KEY=your_presenton_api_key_here
@@ -206,7 +203,7 @@ codebase_digest:
     - "yarn.lock"
 
 llm:
-  model: "claude-sonnet-4-20250514"  # or "gpt-4"
+  model: "gemini-2.5-pro" 
   max_tokens: 4000
   temperature: 0.7
 
@@ -351,12 +348,6 @@ Contributions are welcome! Please follow these steps:
 3. Commit your changes (`git commit -m 'Add amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
-
----
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
